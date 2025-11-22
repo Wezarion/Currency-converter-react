@@ -1,0 +1,53 @@
+import { currencies } from "../currencies";
+import "./style.css";
+import Result from "./Result";
+
+export const Form = ({ calculateResoult, result }) => {
+    const [currency, setCurrency] = useState(currencies[0].pair);
+    const [amount, setAmount] = useState("");
+
+    const onImput = () => {
+        calculateResoult(currency, amount);
+    }
+
+    return (
+        <form className="form" onInput={onImput}>
+        <fieldset className="form__fieldset">
+            <legend className="form__legend">Kalkulator walut</legend>
+            <p className="form__label">
+                <label>
+                    Wybierz pare walutową:
+                    <select className="form__select"
+                        value={currency} 
+                        onChange={({ target }) => setCurrency(target.value)}
+                    >
+                        {currencies.map((currency =>(
+                            <option
+                                kay={currency.pair}
+                                value={currency.pair}
+                            >
+                                {currency.pair}
+                            </option>
+                        )))}
+                    </select>
+                </label>
+            </p>
+            <p className="form__label">
+                <label className="">
+                    Podaj kwote {currency.base} : 
+                    </label>
+                    <input 
+                        value={amount}
+                        onChange={({ target }) => setAmount(target.value)}
+                        className="form__select" 
+                        type="number" 
+                        placeholder="1000"
+                        step="any" 
+                        required></input>
+                
+            </p>
+            <Result result={result} />
+        </fieldset>
+    </form>
+    )
+}

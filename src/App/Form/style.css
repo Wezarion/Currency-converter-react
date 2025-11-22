@@ -1,0 +1,34 @@
+.form {
+    max-width: 400px;
+    margin: 40px auto;
+}
+
+.form__fieldset {
+    background-color: aliceblue;
+    border: 2px solid #4883bb ;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 20px -2px #e2c67a;
+}
+
+.form__legend {
+    margin: auto;
+    border: 2px solid #4883bb;
+    background-color: aliceblue;
+    padding: 5px 20px;
+}
+
+.form__select {
+    float: right;
+    max-width: 50%;
+    border: 2px solid #4883bb;
+    border-radius: 6px;
+    padding: 3px 7px;
+}
+
+.form__select:hover {
+    background-color: #f0f8ff4f;
+}
+
+.form__label {
+    padding: 10px 10px;
+}

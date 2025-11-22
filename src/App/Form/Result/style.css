@@ -1,0 +1,14 @@
+.result {
+    padding: 10px 0 0 10px;
+}
+
+.result__value {
+    float: right;
+    max-width: 50%;
+    text-align: center;
+    border: 2px solid #4883bb;
+    border-radius: 6px;
+    padding: 3px 10px;
+    margin: 0 10px;
+    height: 30;
+}
