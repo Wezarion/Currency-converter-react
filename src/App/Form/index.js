@@ -50,4 +50,4 @@ export const Form = ({ calculateResoult, result }) => {
         </fieldset>
     </form>
     )
-}
+};

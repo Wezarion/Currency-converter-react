@@ -1,5 +1,6 @@
 import { currencies } from "./currencies";
 import "./App.css";
+import { Form } from "./Form";
 
 function App() {
     const [result, setResult] = useState();
