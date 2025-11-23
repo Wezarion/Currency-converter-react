@@ -34,7 +34,7 @@ export const Form = ({ calculateResoult, result }) => {
                 </label>
             </p>
             <p className="form__label">
-                <label className="">
+                <label >
                     Podaj kwote {currency.base} : 
                     </label>
                     <input 
