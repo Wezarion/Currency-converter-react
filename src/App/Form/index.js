@@ -1,6 +1,7 @@
 import { currencies } from "../currencies";
 import "./style.css";
-import Result from "./Result";
+import { Result } from "./Result";
+import { useState } from "react";
 
 export const Form = ({ calculateResoult, result }) => {
     const [currency, setCurrency] = useState(currencies[0].pair);
