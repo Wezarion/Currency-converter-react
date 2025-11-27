@@ -7,6 +7,9 @@ html {
 }
 
 #root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-image: url("moreMoney2.png");
     background-size: cover;
     background-position: center;
