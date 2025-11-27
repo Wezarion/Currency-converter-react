@@ -4,6 +4,7 @@ A simple simulation of possible currency exchanges.
 ## Demo
 
 (https://wezarion.github.io/Currency-converter-react/)
+![Currency Converter](<images/CurrencyConverterDemo.gif>)
 
 ## Technologies
 - The website is built with the following languages: React, HTML, JavaScript, CSS.
