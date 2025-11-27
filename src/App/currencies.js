@@ -2,37 +2,37 @@ export const currencies = [
     {
         pair: "EUR-PLN",
         base: "EUR",
-        finish: "PLN",
+        finalCurrency: "PLN",
         rate: 0.24,
     },
     {
         pair: "PLN-EUR",
         base: "PLN",
-        finish: "EUR",
+        finalCurrency: "EUR",
         rate: 4.25,
     },
     {
         pair: "USD-PLN",
         base: "USD",
-        finish: "PLN",
+        finalCurrency: "PLN",
         rate: 0.27,
     },
     {
         pair: "PLN-USD",
         base: "PLN",
-        finish: "USD",
+        finalCurrency: "USD",
         rate: 3.65,
     },
     {
         pair: "USD-EUR",
         base: "USD",
-        finish: "EUR",
+        finalCurrency: "EUR",
         rate: 0.86
     },
     {
         pair: "EUR-USD",
         base: "EUR",
-        finish: "USD",
+        finalCurrency: "USD",
         rate: 1.16,
     },
 ];
