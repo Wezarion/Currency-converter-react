@@ -22,7 +22,7 @@ export const Form = ({ calculateResult, result }) => {
                         value={currency} 
                         onChange={({ target }) => setCurrency(target.value)}
                     >
-                        {currencies.map((currency =>(
+                        {currencies.map((currency => (
                             <option
                                 kay={currency.pair}
                                 value={currency.pair}
@@ -42,14 +42,14 @@ export const Form = ({ calculateResult, result }) => {
                     onChange={({ target }) => setAmount(target.value)}
                     className="form__select" 
                     type="number" 
-                    placeholder="1000"
+                    placeholder="Wpisz kwote"
                     step="0.01"                         
                     required>
                 </input>                
             </p>
-            <p>
+            
             <Result result={result} />
-            </p>
+            
         </fieldset>
     </form>
     )
