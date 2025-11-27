@@ -3,12 +3,12 @@ import "./style.css";
 import { Result } from "./Result";
 import { useState } from "react";
 
-export const Form = ({ calculateResoult, result }) => {
+export const Form = ({ calculateResult, result }) => {
     const [currency, setCurrency] = useState(currencies[0].pair);
     const [amount, setAmount] = useState("");
 
     const onImput = () => {
-        calculateResoult(currency, amount);
+        calculateResult(currency, amount);
     }
 
     return (
@@ -36,18 +36,20 @@ export const Form = ({ calculateResoult, result }) => {
             <p className="form__label">
                 <label >
                     Podaj kwote {currency.base} : 
-                    </label>
-                    <input 
-                        value={amount}
-                        onChange={({ target }) => setAmount(target.value)}
-                        className="form__select" 
-                        type="number" 
-                        placeholder="1000"
-                        step="any" 
-                        required></input>
-                
+                </label>
+                <input 
+                    value={amount}
+                    onChange={({ target }) => setAmount(target.value)}
+                    className="form__select" 
+                    type="number" 
+                    placeholder="1000"
+                    step="0.01"                         
+                    required>
+                </input>                
             </p>
+            <p>
             <Result result={result} />
+            </p>
         </fieldset>
     </form>
     )
