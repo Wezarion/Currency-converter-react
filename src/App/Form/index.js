@@ -2,19 +2,21 @@ import { currencies } from "../currencies";
 import "./style.css";
 import { Result } from "./Result";
 import { useState } from "react";
+import { Data } from "./Data";
 
 export const Form = ({ calculateResult, result }) => {
     const [currency, setCurrency] = useState(currencies[0].pair);
     const [amount, setAmount] = useState("");
 
-    const onImput = () => {
+    const onInput = () => {
         calculateResult(currency, amount);
     }
 
     return (
-        <form className="form" onInput={onImput}>
+        <form className="form" onInput={onInput}>
         <fieldset className="form__fieldset">
             <legend className="form__legend">Kalkulator walut</legend>
+            <Data />
             <p className="form__label">
                 <label>
                     Wybierz pare walutową:
